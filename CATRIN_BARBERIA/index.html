@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería Catrin Teocal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="CatrinBarberioLogo.jpeg" alt="Logo de Barbería Catrin Teocal" class="logo">
+        <h1>Barbería Catrin Teocal</h1>
+        <nav>
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#cita">Agendar Cita</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#redes">Redes Sociales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li>Corte de Cabello Adulto - $150</li>
+            <li>Corte de Cabello Niño - $140</li>
+            <li>Barba con Ritual Toalla - $150</li>
+            <li>Afeitado - $100</li>
+            <li>Combo Corte + Barba - $250</li>
+        </ul>
+    </section>
+
+    <section id="cita">
+        <h2>Agendar una Cita</h2>
+        <form action="guardar_cita.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="servicio">Selecciona un servicio:</label>
+            <select id="servicio" name="servicio">
+                <option>Corte de Cabello Adulto</option>
+                <option>Corte de Cabello Niño</option>
+                <option>Barba con Ritual Toalla</option>
+                <option>Afeitado</option>
+                <option>Combo Corte + Barba</option>
+            </select>
+        
+            <label for="barbero">Selecciona un barbero:</label>
+            <select id="barbero" name="barbero">
+                <option>ANDRES</option>
+                <option>BRAULIO G.</option>
+            </select>
+        
+            <label for="fecha-hora">Fecha y Hora:</label>
+            <input type="datetime-local" id="fecha-hora" name="fecha_hora" required>
+        
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+
+    <section id="redes">
+        <h2>Síguenos en Redes Sociales</h2>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1623hPjFFj/?mibextid=wwXIfr" target="_blank">
+                <img src="facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/el.catrin_barberia?igsh=eDIzdzY2YW42eWZ5" target="_blank">
+                <img src="instagram.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/524493441297" target="_blank">
+                <img src="whatsapp.jpg" alt="WhatsApp">
+            </a>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <p>Contacto: +52 449-344-12-97 | Dirección: Agustin Lara #5, San Miguel, 47200 Teocaltiche, Jal; México.</p>
+    </footer>
+
+</body>
+</html>
